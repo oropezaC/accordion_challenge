@@ -1,0 +1,163 @@
+
+@font-face {
+     font-family: 'Kumbh Sans', sans-serif;
+     src: url("https://fonts.google.com/specimen/Kumbh+Sans");
+   }
+
+.content{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+
+.content-parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.box {
+    position: absolute;
+    top: 48%;
+    left: 8.7%;
+    width: 35%;
+}
+.img-parent{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.img-parent img {
+    margin-left: -18%;
+      width: 100%;
+}
+
+.parrafo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+.faq {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.item{
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  margin-right: 30%;
+}
+.item p{
+  font-size: 15px;
+  color: #B4B4B8;
+}
+.arrow {
+  padding: 0px 10px;
+}
+
+.img-parent-mobile{
+    display: none;
+}
+
+@media screen and (max-width:700px){
+
+    .parent{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .parrafo{
+        width: 100%;
+        margin-left: 7.5%;
+    }
+
+    .faq {
+        text-align: center;
+        margin-top: 20%;
+        color: #242239;
+        margin-bottom: 10%;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+
+    .img-parent,
+    .box{
+        display: none;
+    }
+
+
+    .img-parent-mobile{
+        position: absolute;
+        display: block;
+        top: 15px;
+        transform: rotate(-1deg);
+    }
+
+
+
+
+}
+
+@media screen and (max-width:1300){
+    .img-parent{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+    }
+
+}
+
+@media screen and (max-width:1200){
+
+    .parrafo{
+        height: 100%;
+        max-height: 100%;
+        margin-right: 10%;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .faq{
+        margin-top: 40%;
+    }
+}
